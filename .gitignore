@@ -12,17 +12,14 @@ dist
 .pnpm-store
 
 # Env / secrets (NEVER commit live keys)
-.env
-.env.*
 !.env.example
 *.key
 identities/
 
 # Editor / OS
 .DS_Store
+temp_auto_push.bat
 .idea
-.vscode/*
-!.vscode/extensions.json
 
 # Build artifacts
 /artifacts
@@ -35,6 +32,8 @@ deployments/*.local.json
 # Keeper
 .keeper-store.json
 .keeper-store.json.corrupted.*
+.keeper-checkpoint.json
+.keeper-checkpoint.json.corrupted.*
 
 # Coverage
 coverage/
@@ -42,3 +41,6 @@ coverage/
 *.lcov.info
 lcov.info
 .nyc_output/
+.gitignore
+branch_structure.json
+config.bat

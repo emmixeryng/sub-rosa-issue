@@ -16,7 +16,7 @@
     "./event-snapshot": "./src/event-snapshot.ts"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "test": "node --import tsx --test src/event-snapshot.test.ts"
   },
